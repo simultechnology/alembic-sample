@@ -12,7 +12,7 @@ class City(Base):
     CountryCode = Column(String(3), nullable=False)
     District = Column(String(20), nullable=False)
     Population = Column(Integer, nullable=False)
-    # Area = Column(Integer, nullable=True)
+    Area = Column(Integer, nullable=True)
 
     def __repr__(self):
         return "<User(name='%s')>" % (self.name)
